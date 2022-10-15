@@ -1,0 +1,32 @@
+{
+  "name": "power-log",
+  "version": "1.0.0",
+  "description": "A library to power your console logs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinav2000kiit/power-log"
+  },
+  "keywords": [
+    "console with stylings",
+    "power log",
+    "power console"
+  ],
+  "author": "Abhinav Srivastava <15abhi9nav2000@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhinav2000kiit/power-log/issues"
+  },
+  "homepage": "https://github.com/abhinav2000kiit/power-log#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
