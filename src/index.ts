@@ -55,14 +55,28 @@ export class Log {
         // diffficulty: easy
     }
 
-    static countMe() {
-        // for open source contribution: implement console.count() using colourful()
-        // diffficulty: easy
+    static counts = {
+        "default": 0
     }
 
-    static countMeReset() {
+    static countMe(label: string){
+        const labelKey = label as keyof typeof Log.counts;
+        if(Log.counts.hasOwnProperty(labelKey)){
+            Log.counts[labelKey]++;
+        } else {
+            Log.counts[labelKey] = 1;
+        }
+        Log.colourful(Log.counts[labelKey]);
+    }
+        
+    static countMeReset(label: string) {
         // for open source contribution: implement console.countReset() using colourful()
         // diffficulty: easy
+        const labelKey = label as keyof typeof Log.counts;
+        if(Log.counts.hasOwnProperty(labelKey)){
+            Log.counts[labelKey] = 0;
+        }
+        Log.colourful(0);
     }
 
     static groupStart() {
