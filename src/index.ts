@@ -41,18 +41,18 @@ export class Log {
     }
 
     static onlyUs() {
-        // for open source contribution
+        // for open source contribution: should show all and only console logs of this type
         // diffficulty: hard
     }
 
     static multiVar() {
-        // for open source contribution
+        // for open source contribution: implement colourful() to handle more than one variable being passed to it
         // difficulty: medium
     }
 
     static logIfFailed() {
         // for open source contribution: implement console.assertion() using colourful()
-        // diffficulty: medium
+        // diffficulty: easy
     }
 
     static countMe() {
@@ -72,7 +72,7 @@ export class Log {
 
     static groupEnd() {
         // for open source contribution: implement console.groupEnd() using colourful()
-        // diffficulty: easy
+        // diffficulty: medium
     }
 
     static tabulate() {
@@ -87,12 +87,12 @@ export class Log {
 
     static timerLog() {
         // for open source contribution: implement console.timeLog() using colourful()
-        // diffficulty: easy
+        // diffficulty: medium
     }
 
     static timerEnd() {
         // for open source contribution: implement console.timeEnd() using colourful()
-        // diffficulty: easy
+        // diffficulty: medium
     }
 }
 
